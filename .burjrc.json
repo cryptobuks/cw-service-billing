@@ -1,0 +1,31 @@
+{
+  "baseDir": "./app",
+  "templatesDir": "./_templates",
+  "structure": {
+    "modules": {
+      "wrapElements": true,
+      "elements": [
+        {
+          "extension": ".controllers.js",
+          "template": "./module/controller.js"
+        },
+        {
+          "extension": ".models.js",
+          "template": "./module/model.js"
+        },
+        {
+          "extension": ".routes.js",
+          "template": "./module/route.js"
+        },
+        {
+          "extension": ".services.js",
+          "template": "./module/service.js"
+        },
+        {
+          "extension": ".test.js",
+          "template": "./module/testfile.js"
+        }
+      ]
+    }
+  }
+}

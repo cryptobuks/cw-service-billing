@@ -1,0 +1,42 @@
+{
+  "name": "service-billing",
+  "version": "1.0.0",
+  "description": "billing service",
+  "main": "app/server.js",
+  "private": true,
+  "scripts": {
+    "dev": "set NODE_ENV=development; nodemon app/server.js",
+    "start": "NODE_ENV=production node app/server.js",
+    "test": "standard && jest --detectOpenHandles",
+    "new-module": "burj module "
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "standard": {
+    "env": [
+      "node",
+      "jest"
+    ],
+    "globals": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:cowellness/iseo/service-billing.git"
+  },
+  "author": "Faraz",
+  "license": "",
+  "devDependencies": {
+    "burj": "^1.3.0",
+    "documentation": "^13.0.2",
+    "jest": "^26.1.0",
+    "pre-commit": "^1.2.2",
+    "standard": "*",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "@cowellness/cw-micro-service": "*",
+    "config": "^3.3.1",
+    "glob": "^7.1.6"
+  }
+}

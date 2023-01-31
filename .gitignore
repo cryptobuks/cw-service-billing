@@ -1,0 +1,12 @@
+node_modules/
+.npm
+.DS_Store
+.vscode
+*.tmp
+*.env
+*.log
+apidocs
+docs
+config/development.js
+config/test.js
+.directory

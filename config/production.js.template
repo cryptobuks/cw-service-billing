@@ -1,0 +1,5 @@
+module.exports = {
+  service: 'billing',
+  rabbitmq: { active: true },
+  redis: { active: true }
+}
